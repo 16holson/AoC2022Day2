@@ -46,7 +46,7 @@ def main():
     for line in file:
         total += findResults(replaceInput(line.strip().replace(" ", "")), points)
     print(f"Total points: {total}")
-
+    file.close()
 
 if (__name__ == "__main__"):
     main()
